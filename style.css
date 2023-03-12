@@ -1,0 +1,48 @@
+body{
+    height:100vh;
+   
+}
+.progress{
+    width:100%;
+    top:0;
+    left: 0;
+}
+#box{
+    width:40rem;
+ 
+}
+
+.question{
+margin-bottom:30px;
+}
+
+.options{
+   
+    gap:1rem
+}
+
+/* Elementos Javascript*/
+.option{
+
+height: 30px;
+    border-radius:15px ;
+    display: flex;
+    align-items:center;
+}
+.option:hover{
+    margin-left: 5px;
+    height: 35px;
+    transition:0.3s ease-in-out;
+    box-shadow: -3px 3px 5px 1px gray;
+}
+.option span{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:5px;
+    color:white;
+    background-color: rgb(163, 163, 163);
+}
