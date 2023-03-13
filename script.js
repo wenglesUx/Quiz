@@ -1,13 +1,17 @@
 let currentQuestion =0;
 let correctAnswers = 0;
+
 showquestion()
 
 document.querySelector('.scoreArea button').addEventListener('click', reset);
 function showquestion(){
     if(questions[currentQuestion]){
         let q = questions[currentQuestion]
-
         
+        let progress =  Math.floor((currentQuestion / questions.length)*100)
+        document.querySelector('.progress-bar').style.width = `${progress}%`;
+      
+
         document.querySelector('.scoreArea').style.display = 'none';
         document.querySelector('.questionArea').style.display = 'block';
     
@@ -30,10 +34,12 @@ function showquestion(){
 function eventClick(e){
 let clicked = parseInt(e.target.getAttribute('data-op'));
 
+
 if(questions[currentQuestion].answer === clicked) {
-    
+   
     correctAnswers++;
 }
+
 
 currentQuestion++;
 showquestion();
@@ -43,13 +49,14 @@ function finish(){
     console.log(points)
     document.querySelector('.scoreText2').innerHTML = `Você respondeu ${questions.length} questões e acertou ${correctAnswers}.`;
     
-
+    document.querySelector('.progress-bar').style.width = '100%';
     document.querySelector('.scoreArea').style.display = 'block';
     document.querySelector('.questionArea').style.display = 'none';
 }
 function reset(){
     currentQuestion =0;
     correctAnswers = 0;
+
     showquestion()
 
 }

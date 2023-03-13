@@ -7,6 +7,9 @@ body{
     top:0;
     left: 0;
 }
+.progress-bar{
+    background-color: red;
+}
 #box{
     width:40rem;
  
@@ -45,4 +48,19 @@ height: 30px;
     margin-right:5px;
     color:white;
     background-color: rgb(163, 163, 163);
+}
+.scoreArea{
+    gap:3rem;
+ 
+
+}
+.scoreArea button{
+    background-color:rgb(163, 163, 163);
+    outline: none;
+    border: 1px solid transparent ;
+
+}
+.scoreArea button:hover{
+    border: 1px solid red;
+    transition: 0.2s linear;
 }

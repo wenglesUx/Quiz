@@ -15,7 +15,7 @@ let questions = [
             'Tiago',
             'Paulo'
         ],
-        answer:3
+        answer:1
     },
      {  question: 'Quem foi o primeiro rei de Israel?',
         options:[
@@ -26,5 +26,23 @@ let questions = [
         ],
         answer:1
     },
+    {  question: 'Qual é o nome do pai de Jesus?',
+    options:[
+        'João',
+        'José',
+        'Tiago',
+        'Paulo'
+    ],
+    answer:1
+},
+ {  question: 'Quem foi o primeiro rei de Israel?',
+    options:[
+        'Saul',
+        'Davi',
+        'Salomão',
+        'Josué'
+    ],
+    answer:1
+},
      
 ];
